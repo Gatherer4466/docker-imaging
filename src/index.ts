@@ -3,7 +3,7 @@ import itemRoutes from './routes/items'
 
 const app = express()
 
-app.use(express.json)
+app.use(express.json())
 
 app.use('/items', itemRoutes)
 
