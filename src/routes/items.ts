@@ -18,6 +18,10 @@ router.post('/', (req, res) => {
 })
 
 
+router.get('/', (req,res) => {
+    res.json(items)
+})
+
 router.get('/:id', (req, res) => {
     const item = items.find(i => i.id === Number(req.params.id))
 
